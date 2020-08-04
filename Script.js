@@ -23,7 +23,9 @@ file.addEventListener('change' , function(){
     let des = document.getElementById('Descrição').value
 
     if(Nome == '' || preço ==''){
+        
         window.alert('Preencha os campos corretamente')
+
     }else{
 
 /*Create section*/
@@ -63,11 +65,28 @@ file.addEventListener('change' , function(){
 
 
 }
+
+
     reader.readAsDataURL(filem)
 },100)
+
+
+
+
 reader.readAsDataURL(filem)
 
 })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
