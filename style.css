@@ -90,4 +90,62 @@ label:hover{
     width: 300px;
     height: 165px;
 }
+.button{
+    position:relative ;
 
+    left: 0;
+}
+.sectionOrigin{
+    flex-direction: row;
+    background-color: rgb(224, 224, 224);
+    border: 2px solid rgb(73, 73, 73);
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    right: 50px;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: Decker;
+    overflow: scroll;
+}
+.Carrinho{
+    position: absolute;
+    left: 26%;
+    top: 7%;
+}
+.carSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(54, 54, 54);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.carName{
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.carPreço{
+    color: black;
+    margin-left: 10px;
+    margin-top: 40px;
+    background-color:rgb(255, 126, 20);
+    color: white;
+    height: 20px;
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 20px;
+}
+.carIMG{
+    flex-direction: row;
+    position: relative;
+    width: 170px;
+    height: 100px;
+    margin-top: 0;
+    top: 0;
+    border-right: 1px solid rgb(255, 126, 20);
+}

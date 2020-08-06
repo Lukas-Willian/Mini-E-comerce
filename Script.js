@@ -1,6 +1,7 @@
 
 let body = document.getElementById('Body')
 let file = document.getElementById('file');
+let ArrayProduct = [];
 
 
 file.addEventListener('change' , function(){
@@ -28,13 +29,16 @@ file.addEventListener('change' , function(){
 
     }else{
 
+        
+
 /*Create section*/
     let section = document.createElement('section');
     section.classList.add('sec');
+    body.appendChild(section);
+
 
 
 /*Create Product Name*/
-    body.appendChild(section);
     let Name = document.createElement('p');
     Name.classList.add('Name-post');
     Name.innerText = Nome;
@@ -42,7 +46,6 @@ file.addEventListener('change' , function(){
 
     /*Create image*/
     
-        console.log(reader.result)
         let img = document.createElement('img');
         img.classList.add('img');
         img.src = reader.result
@@ -63,11 +66,70 @@ file.addEventListener('change' , function(){
     description.innerText = des;
     Epreço.appendChild(description);
 
+/*Create Button carrinho*/
 
+    let button = document.createElement('button');
+    button.classList.add('button');
+    Epreço.appendChild(button);
+    console.log(button);
+    button.innerText = 'Adicionar ao carrinho'
+
+
+
+    /*Função de adicionar ao carrinho*/
+
+    button.addEventListener('click' , function(){
+
+       
+        let Produtos =  {
+            Name : Nome,
+            Preço : preço,
+            descrição : description,
+            foto : filem.name,
+            fotoLink : reader.result
+
+            
+        }
+        console.log(Produtos)
+
+        let section2 = document.getElementById('sectionOrigin')
+        
+
+        let carSection = document.createElement('section');
+        carSection.classList.add('carSection');
+        section2.appendChild(carSection);
+
+
+
+        let carIMG = document.createElement('img');
+        carIMG.classList.add('carIMG');
+        carIMG.src = Produtos.fotoLink
+        carSection.appendChild(carIMG)
+
+
+        let carName = document.createElement('p');
+        carName.classList.add('carName');
+        carName.innerText = Produtos.Name;
+        carSection.appendChild(carName)
+
+
+
+        let carPreço = document.createElement('p');
+        carPreço.classList.add('carPreço');
+        carPreço.innerText = `R$${Produtos.Preço},00`;
+        carSection.appendChild(carPreço);
+
+
+        
+    })
 }
 
 
+
+
     reader.readAsDataURL(filem)
+
+
 },100)
 
 
@@ -76,6 +138,23 @@ file.addEventListener('change' , function(){
 reader.readAsDataURL(filem)
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
