@@ -75,23 +75,26 @@ file.addEventListener('change' , function(){
     button.innerText = 'Adicionar ao carrinho'
 
 
+ 
+
+
 
     /*Função de adicionar ao carrinho*/
 
     button.addEventListener('click' , function(){
+    
+    let Produtos =  {
+        Name : Nome,
+        Preço : preço,
+        descrição : description,
+        foto : filem.name,
+        fotoLink : reader.result
 
-       
-        let Produtos =  {
-            Name : Nome,
-            Preço : preço,
-            descrição : description,
-            foto : filem.name,
-            fotoLink : reader.result
+        
+    }
+    console.log(Produtos)
 
-            
-        }
-        console.log(Produtos)
-
+    
         let section2 = document.getElementById('sectionOrigin')
         
 
@@ -118,6 +121,24 @@ file.addEventListener('change' , function(){
         carPreço.classList.add('carPreço');
         carPreço.innerText = `R$${Produtos.Preço},00`;
         carSection.appendChild(carPreço);
+
+        let button2 = document.createElement('button');
+        button2.classList.add('button2');
+        button2.innerHTML = 'Remover'
+        carSection.appendChild(button2);
+
+        button2.addEventListener('click', function(){
+            carSection.remove();
+            delete Produtos.Name;
+            delete Produtos.Preço;
+            delete Produtos.foto;
+            delete Produtos.fotoLink;
+            delete Produtos.descrição;
+
+                console.log(Produtos)
+
+            
+        })
 
 
         
