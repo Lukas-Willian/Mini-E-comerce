@@ -50,6 +50,11 @@ file.addEventListener('change' , function(){
         img.classList.add('img');
         img.src = reader.result
         section.appendChild(img)
+
+        let buttonPag = document.createElement('button');
+        buttonPag.classList.add('pagB');
+        buttonPag.innerHTML = ''
+        section.appendChild(buttonPag);
         
 
 
@@ -72,27 +77,31 @@ file.addEventListener('change' , function(){
     button.classList.add('button');
     Epreço.appendChild(button);
     console.log(button);
-    button.innerText = 'Adicionar ao carrinho'
+    button.innerText = 'Adicionar ao carrinho';
 
 
- 
+    let random = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)+Math.random().toString(36)+Math.random().toString(15,2);
+    let Produtos =  {
+        Name : Nome,
+        Preço : preço,
+        descrição : description,
+        foto : filem.name,
+        fotoLink : reader.result,
+        id: random
+
+        
+    }
+    console.log(Produtos)
+
+
+
 
 
 
     /*Função de adicionar ao carrinho*/
 
     button.addEventListener('click' , function(){
-    
-    let Produtos =  {
-        Name : Nome,
-        Preço : preço,
-        descrição : description,
-        foto : filem.name,
-        fotoLink : reader.result
 
-        
-    }
-    console.log(Produtos)
 
     
         let section2 = document.getElementById('sectionOrigin')
@@ -129,13 +138,9 @@ file.addEventListener('change' , function(){
 
         button2.addEventListener('click', function(){
             carSection.remove();
-            delete Produtos.Name;
-            delete Produtos.Preço;
-            delete Produtos.foto;
-            delete Produtos.fotoLink;
-            delete Produtos.descrição;
 
-                console.log(Produtos)
+
+                console.log('Removido')
 
             
         })

@@ -1,23 +1,39 @@
 body{
+    margin: 0 auto;
     background-color: rgb(245, 245, 245);
 }
+
+.Armazenado{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 0 auto;
+    width: 100%;
+    height: 300px;
+    background-color: #ff9920;
+    box-shadow: black 0px 0px 0px 5px ;
+}
 .Nome{
-    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    color: white;
     font-size: 20px;
     font-family: Decker;
+    margin-top: 50px;
 }
 label{
     position: absolute;
-    margin-top: 180px;
-    margin-left: 6%;
+    top: 75%;
+    left: 48%;
     width: 250px;
     height: 40px;
-    color: rgb(0, 0, 0);
+    background-color: white;
+    color: black;
     font-family: Decker;
     text-align: center;
     border: 2px solid;
     border-radius: 20px;
     border-color: #ff8a37;
+    
 }
 label:hover{
     cursor: pointer;
@@ -27,12 +43,15 @@ label:hover{
     color: white;
 }
 .aviso{
-    margin-top: 260px;
-    margin-left: 8.3%;
-    color: red;
+    position: absolute;
+    margin-top: 275px;
+    left: 50%;
+    color: white;
 }
 .p-Descrição{
-    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    margin-top: 50px;
+    color: white;
     font-size: 20px;
     font-family: Decker;
 }
@@ -41,7 +60,7 @@ label:hover{
     height: 150px;
     resize: none;
     outline: none;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(255, 255, 255);
     margin-bottom: -135px;
     margin-left: 5px;
 }
@@ -62,12 +81,12 @@ label:hover{
 .sec{
     position: relative;
     transform: translateX(-50%);
-    transform: translateY(40%);
+    transform: translateY(90%);
     width: 300px;
     height: 300px;
     background-color: rgb(179, 179, 179);
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 50px;
     border: 1px solid rgb(15, 15, 15);
 }
@@ -90,6 +109,21 @@ label:hover{
     width: 300px;
     height: 165px;
 }
+
+.pagB{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+}
+.pagB:hover{
+    cursor: pointer;
+    border: none;
+    
+}
 .button{
     position:relative ;
 
@@ -97,18 +131,21 @@ label:hover{
 }
 .sectionOrigin{
     flex-direction: row;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(255, 255, 255);
     border: 2px solid rgb(73, 73, 73);
     position: absolute;
     width: 400px;
-    height: 450px;
-    right: 50px;
+    height: 300px;
+    right: 0px;
     top: 0;
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Decker;
     overflow: scroll;
+    text-align: center;
 }
+
+
 .Carrinho{
     position: absolute;
     left: 26%;
