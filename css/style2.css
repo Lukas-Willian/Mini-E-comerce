@@ -1,0 +1,239 @@
+body{
+    
+    height: 2000px;
+    margin: 0 auto;
+    background-image: linear-gradient(#13141a ,#2b2d3a );
+}
+
+.List{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-left: 225px;
+    color: white;
+
+
+}
+
+.Botão{
+    background-color: transparent;
+    color: white;
+    margin-left: 108px;
+    font-family: Decker;
+    font-size: 20pt;
+    border: none;
+}
+#Upload{
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+
+#img-prom{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.Armazenado{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 1200px;
+    background-color: transparent;
+    
+}
+#Logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Nome{
+    transform: translateX(35%);
+    color: white;
+    font-size: 20px;
+    font-family: Decker;
+    margin-top: 125px;
+}
+#Nome{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.pr{
+    transform: translateX(35%);
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: Decker;
+}
+#Preço{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+label{
+    
+    
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-family: Decker;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: #ff8a37;
+    
+}
+label:hover{
+    cursor: pointer;
+    background-color: rgb(255, 131, 42);
+    border-color: white;
+    transition: linear 0.2s;
+    color: white;
+}
+.aviso{
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+}
+.p-Descrição{
+ transform: translateX(41%);
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: Decker;
+}
+#Descrição{
+    width: 100%;
+    height: 300px;
+    font-size: 20px;
+}
+.Descrição{
+    width: 300px;
+    height: 150px;
+    resize: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: -135px;
+    margin-left: 5px;
+}
+
+
+
+.sectionOrigin{
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    right: 0px;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: Decker;
+    overflow: scroll;
+    text-align: center;
+}
+
+
+.Carrinho{
+    position: absolute;
+    left: 26%;
+    top: 7%;
+}
+.carSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(54, 54, 54);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.carName{
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.carPreço{
+    color: black;
+    margin-left: 10px;
+    margin-top: 40px;
+    background-color:rgb(255, 126, 20);
+    color: white;
+    height: 20px;
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 20px;
+}
+.carIMG{
+    flex-direction: row;
+    position: relative;
+    width: 170px;
+    height: 100px;
+    margin-top: 0;
+    top: 0;
+    border-right: 1px solid rgb(255, 126, 20);
+}
+
+.button2{
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    font-family: Decker;
+    font-size: 20px;
+    height: 20px;
+    left: 45%;;
+    border: 0;
+}
+
+.button2:hover{
+    cursor: pointer;
+    color: red;
+}
+
+#DefaultImg{
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    object-fit: contain;
+}
+
+#Final{
+    background: #414458;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 100%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    border-style: none;
+}
+#Final:hover{
+    cursor: pointer;
+    background-color: #6e7395;
+    transition: 1s;
+}

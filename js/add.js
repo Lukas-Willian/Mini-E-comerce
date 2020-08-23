@@ -38,14 +38,8 @@ file.addEventListener('change' , function(){
 
 
 
-/*Create Product Name*/
-    let Name = document.createElement('p');
-    Name.classList.add('Name-post');
-    Name.innerText = Nome;
-    section.appendChild(Name);
-
     /*Create image*/
-    
+        
         let img = document.createElement('img');
         img.classList.add('img');
         img.src = reader.result
@@ -55,6 +49,13 @@ file.addEventListener('change' , function(){
         buttonPag.classList.add('pagB');
         buttonPag.innerHTML = ''
         section.appendChild(buttonPag);
+
+
+    /*Create Product Name*/
+    let Name = document.createElement('p');
+    Name.classList.add('Name-post');
+    Name.innerText = Nome;
+    section.appendChild(Name);
         
 
 
@@ -64,12 +65,7 @@ file.addEventListener('change' , function(){
     Epreço.innerText = `R$${preço},00`
     section.appendChild(Epreço)
 
-/*Create Product description*/
-    
-    let description = document.createElement('p');
-    description.classList.add('Desc');
-    description.innerText = des;
-    Epreço.appendChild(description);
+
 
 /*Create Button carrinho*/
 
@@ -77,7 +73,10 @@ file.addEventListener('change' , function(){
     button.classList.add('button');
     Epreço.appendChild(button);
     console.log(button);
-    button.innerText = 'Adicionar ao carrinho';
+    let imgCar = document.createElement('img');
+    imgCar.classList.add('imgCarButton');
+    button.appendChild(imgCar)
+    imgCar.src = './Carrinho.png'
 
 
     let random = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)+Math.random().toString(36)+Math.random().toString(15,2);

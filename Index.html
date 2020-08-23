@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <title>
             Mini E-comerce
         </title>
@@ -8,18 +8,25 @@
 
     <body id="Body">
 
-        <section class="Armazenado">
-            <p class="Nome">Nome do produto: <input type="text" id="Nome" placeholder="Digite o nome do produto"/> </p>
-            <p class="Nome">Preço do produto: <input type="number" id="preço" placeholder="Digite o preço do produto"></p>
-            <p class="p-Descrição">Descrição:<textarea class="Descrição" id="Descrição" placeholder="Adicione uma descrição"></textarea></p>
-            <input type="file" id="file" name="file" hidden/>
-            <label for="file" id="file">Selecionar imagem <br> e finalizar</label>
-            <p class="Aviso">Imagens de 300x150 pixels</p>
+        <img src="./Prototipo/Icons/1.png" width="250px" height="105px"/>
+        
+
+        <div class="List">
+            <input type="button" value="Inicio" class="Botão" id=""/>
+            <input type="button" value="Favoritos" class="Botão" id=""/>
+            <input type="button" value="Promoções" class="Botão" id=""/>
+        </div>
+        <img src="./IMG/Icons/Upload.png" width="55px" height="40px" id="Upload" onclick="Upload()"/>
+        <img src="./Carrinho.png" width="40px" height="40px" id="Carz" onclick="Carrin()"
+        <section id="img-prom"/>
+        <img src="./IMG/Images/Inicio.png"  id="img-prom"/>
+        </section>
+
+
             <section class="sectionOrigin" id="sectionOrigin">
                 <p>Carrinho</p> <img src="./Carrinho.png"/ height="25px" width="25px" class="Carrinho">
             </section>
-        </section>
             
     </body>
-    <script src="./Script.js"></script>
+    <script src="./js/Script.js"></script>
 </html>

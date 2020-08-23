@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style2.css">
+        <title>
+            Mini E-comerce
+        </title>
+    </head>
+
+    <body id="Body">
+
+        <img src="./Prototipo/Icons/1.png" width="250px" height="105px"/>
+
+        <div class="List">
+            <a href="./Index.html" class="Botão">Inicio</a>
+            <a href="./Index.html" class="Botão">Favoritos</a>
+            <a href="./Index.html" class="Botão">Promoções</a>
+        </div>
+        
+
+        <section class="Armazenado">
+            <img src="./Prototipo/Icons/1.png" id="Logo" width="200px" height="90px"/>
+            <p class="Nome">Nome do produto: </p> <input type="text" id="Nome" placeholder="Digite o nome do produto"/>
+            <p class="pr">Preço do produto:</p><input type="number" id="preço" placeholder="Digite o preço do produto">
+            <p class="p-Descrição">Descrição:</p><textarea class="Descrição" id="Descrição" placeholder="Adicione uma descrição"></textarea>
+            <input type="file" id="file" name="file" hidden/>
+            <label for="file" id="file">Selecionar imagem <br> e finalizar</label>
+            <p class="Aviso">Imagens de 300x150 pixels</p>
+            <img src="./IMG/Icons/default-img.png" id="DefaultImg" width="300px" height="300px"/>
+            <input type="button" id="Final" value="Finalizar"/>
+
+        </section>
+            
+    </body>
+    <script src="./js/Protocolo.js"></script>
+</html>

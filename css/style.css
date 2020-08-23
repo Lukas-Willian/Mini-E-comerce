@@ -1,29 +1,84 @@
 body{
+    
+    height: 2000px;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
+    background-image: linear-gradient(#13141a ,#2b2d3a );
+}
+
+.List{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-left: 225px;
+    color: white;
+
+
+}
+
+.Botão{
+    background-color: transparent;
+    color: white;
+    margin-left: 108px;
+    font-family: Decker;
+    font-size: 20pt;
+    border: none;
+}
+#Upload{
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+#Upload:hover{
+    cursor: pointer;
+}
+#Carz{
+    position: absolute;
+    right:17%;
+    top:5%;
+    background-color: #555b77;
+    border-radius: 5px;
+    align-items: center;
+}
+#img-prom{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .Armazenado{
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: 0 auto;
+    margin-top: 2000px;
     width: 100%;
     height: 300px;
     background-color: #ff9920;
     box-shadow: black 0px 0px 0px 5px ;
 }
+
 .Nome{
+    
     margin-left: 25px;
     color: white;
     font-size: 20px;
     font-family: Decker;
     margin-top: 50px;
 }
+.pr{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: Decker;
+}
 label{
     position: absolute;
     top: 75%;
-    left: 48%;
+    left: 28.5%;
     width: 250px;
     height: 40px;
     background-color: white;
@@ -45,7 +100,7 @@ label:hover{
 .aviso{
     position: absolute;
     margin-top: 275px;
-    left: 50%;
+    left: 31%;
     color: white;
 }
 .p-Descrição{
@@ -75,48 +130,45 @@ label:hover{
     font-family: Decker;
     text-align: center;
     height: 30px;
-    background-color: rgb(255, 126, 20);
-    margin-top: 0;
+    background-color: #1c1e27;
+    margin-top: 300px;
 }
 .sec{
     position: relative;
-    transform: translateX(-50%);
-    transform: translateY(90%);
-    width: 300px;
-    height: 300px;
-    background-color: rgb(179, 179, 179);
+    transform: translateX(50%);    
+    transform: translateY(160%);
+    width: 348px;
+    height: 365px;
+    background-color: #1c1e27;
     display: inline-block;
-    margin-left: 50px;
-    margin-top: 50px;
-    border: 1px solid rgb(15, 15, 15);
+    margin-left: 25px;
+    margin-top: 25px;
+    border: 1px solid #bba306;
 }
 .Preço{
-    margin-top: 160px;
+    margin-top: -10px;
     text-align: center;
-    color: white;
+    color: #bba306;
     font-family: Decker;
-    width: 100%;
-    height: 110px;
-    background-color: rgb(255, 126, 20);
+
 }
 .Desc{
     margin-top: 15px;
     font-size: 15px;    
 }
 .img{
-    margin-top: -20px;
+    margin-top: 0 auto;
     position: absolute;
-    width: 300px;
-    height: 165px;
+    width: 348px;
+    height: 294px;
 }
 
 .pagB{
     position: absolute;
     background-color: transparent;
-    border: none;
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 348px;
+    height: 365px;
     top: 0;
 }
 .pagB:hover{
@@ -125,24 +177,42 @@ label:hover{
     
 }
 .button{
-    position:relative ;
-
-    left: 0;
+    position:absolute ;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    top: 0;
+    right: 0;
+}
+.imgCarButton{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 .sectionOrigin{
     flex-direction: row;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(73, 73, 73);
+    background-color: #4b4f64;
     position: absolute;
     width: 400px;
-    height: 300px;
-    right: 0px;
-    top: 0;
-    color: rgb(0, 0, 0);
+    height: 0px;
+    right: 8%;
+    top: 10%;
+    color: white;
     font-size: 25px;
     font-family: Decker;
     overflow: scroll;
     text-align: center;
+    overflow-x: hidden;
+    border: 2px solid #15161b;
+}
+.sectionOrigin:hover{
+    width: 400;
+    height: 300px;
 }
 
 
