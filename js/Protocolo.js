@@ -10,8 +10,6 @@ file.addEventListener('change' , function(){
     
     setTimeout(() => {
         img.src = reader.result
-    
-       
     },100);
     reader.readAsDataURL(filem)
 })
