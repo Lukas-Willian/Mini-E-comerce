@@ -1,0 +1,28 @@
+app.post('/dados' , function(req,res){
+    Post.create({
+        titulo:req.body.nome,
+        preço:req.body.preco,
+        descrição:req.body.desc
+    }).then(function(){
+        res.send('Post criado')
+    }).catch(function(erro){
+        res.send('Falha ao adicionar ao db' + erro)
+    })
+
+})
+
+const Post = require('./Models/Post')
+
+
+
+//conexão de banco de dados
+    const sequelize = new Sequelize('produtoApp' , 'root' , '123Lukas@',{
+        host: 'localhost',
+        dialect:'mysql'
+    });
+
+    sequelize.authenticate().then(function(){
+        console.log('Connect')
+    }).catch(function(erro){
+        console.log('falha ao se conectar:' + erro)
+    })

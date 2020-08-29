@@ -2,7 +2,19 @@ body{
     
     height: 2000px;
     margin: 0 auto;
+    overflow-x: hidden;
     background-image: linear-gradient(#13141a ,#2b2d3a );
+}
+
+@keyframes opacity{
+    from{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-50);
+        opacity: 1;
+    }
 }
 
 .List{
@@ -41,6 +53,8 @@ body{
     align-items: center;
 }
 #img-prom{
+    animation-name: opacity;
+    animation-duration: 2s;
     position: absolute;
     top: 15%;
     left: 50%;

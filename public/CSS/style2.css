@@ -5,6 +5,7 @@ body{
     background-image: linear-gradient(#13141a ,#2b2d3a );
 }
 
+
 .List{
     position: relative;
     display: flex;
@@ -28,6 +29,7 @@ body{
     position: absolute;
     right: 20%;
     top: 5%;
+    background-color: transparent;
 }
 
 #img-prom{
@@ -215,7 +217,6 @@ label:hover{
     top: 74%;
     left: 50%;
     transform: translateX(-50%);
-    
     object-fit: contain;
 }
 

@@ -1,0 +1,76 @@
+#list{
+    margin-top: 32%;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: Decker,regular;
+    
+}
+
+#space{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    overflow:scroll;
+    overflow-y: hidden;
+
+}
+
+#space::-webkit-scrollbar{
+    background-color:#535972 ;
+    height: 8px;
+}
+
+#space::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+
+body::-webkit-scrollbar{
+    background-color:#535972 ;
+    width: 13px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
+}
+
+#Quadro{
+    
+    
+    width: 300px;
+    height: 350px;
+    background-color: #0b0c0f;
+    color: white;
+    text-align: center;
+    font-family: Decker;
+    font-size: 20px;
+    border: solid rgb(177, 150, 0) 1px;
+
+}
+
+#IMG{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #303442;
+
+}
+#Nome{
+    margin-top: 0;
+    font-size:25px;
+}
+
+#Preço{
+    color: rgba(241, 205, 0, 0.938);
+}
+
+#Lixeira{
+
+    margin-bottom: 0;
+    
+}

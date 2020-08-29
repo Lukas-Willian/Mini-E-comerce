@@ -1,3 +1,5 @@
+
+console.log('tudo certo')
 let file = document.getElementById('file');
 let img = document.getElementById('DefaultImg');
 
@@ -33,4 +35,5 @@ Final.addEventListener('click' , function(){
     }
 
 })
+
 
