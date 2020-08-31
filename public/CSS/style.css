@@ -286,3 +286,7 @@ label:hover{
     cursor: pointer;
     color: red;
 }
+
+#gender{
+    color: white;
+}

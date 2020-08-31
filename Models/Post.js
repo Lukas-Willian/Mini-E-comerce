@@ -1,5 +1,8 @@
 const db = require('./db');
 
+
+
+
 const Post = db.sequelize.define('produtos' ,{
     titulo:{
         type:db.Sequelize.STRING
@@ -9,8 +12,19 @@ const Post = db.sequelize.define('produtos' ,{
     },
     descrição:{
         type:db.Sequelize.TEXT
+    },
+    categorias:{
+        type:db.Sequelize.STRING
+    },
+    images:{
+        type:db.Sequelize.STRING
     }
     
 });
 
-module.exports = Post
+
+
+
+
+module.exports = Post;
+

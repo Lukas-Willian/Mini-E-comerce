@@ -6,6 +6,13 @@
     font-family: Decker,regular;
     
 }
+#list2{
+    margin-top: 12%;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: Decker,regular;
+}
 
 #space{
     
@@ -71,6 +78,6 @@ body::-webkit-scrollbar-thumb{
 
 #Lixeira{
 
-    margin-bottom: 0;
+    position: relative;
     
 }

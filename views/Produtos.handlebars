@@ -18,23 +18,35 @@
         </div>
             </form>
         
-<form action="/dados" method="POST">
+<form action="/upload" enctype="multipart/form-data" method="POST">
         <section class="Armazenado">
             <img src="./static/IMG/1.png" id="Logo" width="200px" height="90px"/>
             <p class="Nome">Nome do produto: </p> <input type="text" id="Nome" name="nome" placeholder="Digite o nome do produto"/>
             <p class="pr">Preço do produto:</p><input type="number" id="preço" name="preco" placeholder="Digite o preço do produto">
-            <p class="p-Descrição">Descrição:</p><textarea class="Descrição" id="Descrição" name="desc" placeholder="Adicione uma descrição"></textarea>
-            <input type="file" id="file" name="file" hidden/>
-            <label for="file" id="file">Selecionar imagem <br> e finalizar</label>
+            <p id="Cate">Categorias</p>
+                <div id="Option">
+                <input type="radio" name="select" value="Tenis">
+                <br>
+                <input type="radio" name="select" value="Roupas">
+                </div>
+                
+            
+            <p class="p-Descrição">Descrição:</p><textarea class="Descrição" id="Descrição" name="desc" placeholder="Adicione uma descrição"></textarea>    
+                <input type="file" id="file" name="file" hidden/>
+                <label for="file" id="file">Selecionar imagem</label>
+                
+            
             <p class="Aviso">Imagens de 300x150 pixels</p>
             <img src="./static/IMG/Icons/default-img.png" id="DefaultImg" width="300px" height="300px"/>
-            <button id="Final">Finalizar</button>
+            <input type="submit" value="upload" id="Final"/>
 
         </section>
+        
     </form> 
+
+
             
     </body>
-    <script src="./static/Protocolo.js"></script>
-   
+    <script src="../static/Protocolo.js"></script>
   
 </html>

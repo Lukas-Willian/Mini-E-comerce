@@ -42,11 +42,11 @@ body{
 
 .Armazenado{
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 700px;
-    height: 1200px;
+    height: 1400px;
     background-color: transparent;
     
 }
@@ -237,4 +237,51 @@ label:hover{
     cursor: pointer;
     background-color: #6e7395;
     transition: 1s;
+}
+
+#Cate{
+    color: white;
+    font-family: Decker;
+    font-size: 25px;
+}
+
+#Categorias{
+    background: #43465a;
+    width: 180px;
+    height: 40;
+    font-size: 15px;
+    color: white;
+    font-family: Decker;
+}
+
+#Option{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=radio]{
+    width: 100px;
+    height: 40px;
+}
+input[type=radio]::after{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #43465a;
+    box-sizing: border-box;
+    background-color: #3f4357;
+    content: attr(value);
+    display: block;
+    color: white;
+    font-family: Decker;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+}
+input[type=radio]:checked:after{
+    background-color: #21222c;
+}
+input[type=radio]:hover{
+    cursor: pointer;
 }
