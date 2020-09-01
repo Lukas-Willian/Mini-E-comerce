@@ -3,8 +3,8 @@
 
     <html>
     <head>
-        <link rel="stylesheet" href="./static/CSS/style.css">
-        <link rel="stylesheet" href="./static/CSS/Newbox.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/Newbox.css">
         <link rel="shortcut icon" href="./static/IMG/1.png">
         <title>
             Mini E-comerce
@@ -44,7 +44,7 @@
             <section id="space">
                 {{#each posts}}
                     <div id="Quadro">
-                        <img id="IMG" src="{{dataValues.images}}"/>
+                        <input type="image" id="IMG" alt="Submit" src="{{dataValues.images}}"
                         <h1 id="Nome">{{dataValues.titulo}}</h1>
                         <p id="Preço">R${{dataValues.preço}}</p>
                         <a id="Lixeira" href="/deletarPost/{{dataValues.id}}"><input type="image" alt="Submit" src="../static/IMG/Icons/Lixeira.png" width="30px" height="25px"/> </a>  
@@ -58,10 +58,11 @@
         <section id="space">
             {{#each roups}}
                 <div id="Quadro">
-                    <img id="IMG" src="{{dataValues.imagesRoupas}}"/>
+                    <a href="/pag/{{dataValues.id}}"><input type="image" id="IMG" alt="Submit" src="{{dataValues.imagesRoupas}}"/><input id="Button2" type="button" alt="Submit"/></a>     
                     <h1 id="Nome">{{dataValues.tituloRoupas}}</h1>
                     <p id="Preço">R${{dataValues.preçoRoupas}}</p>
-                    <a id="Lixeira" href="/deletarRoupas/{{dataValues.id}}"><input type="image" alt="Submit" src="../static/IMG/Icons/Lixeira.png" width="30px" height="25px"/> </a>  
+                    <a id="Lixeira" href="/deletarRoupas/{{dataValues.id}}"><input type="image" alt="Submit" src="../static/IMG/Icons/Lixeira.png" width="30px" height="25px"/> </a> 
+         
                 </div>
              {{/each}}   
         </section>
@@ -71,5 +72,5 @@
 
             
     </body>
-    
+    <script src="../js/Script.js"></script>
 </html>

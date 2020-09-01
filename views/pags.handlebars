@@ -1,0 +1,88 @@
+
+    <html>
+    <head>
+
+        <title>
+            Mini E-comerce
+        </title>
+    </head>
+
+    <body id="Body">
+        <link rel="stylesheet" href="/CSS/pagProdutos.css">
+        <img src="/static/IMG/1.png" width="250px" height="105px"/>
+        
+
+        <div class="List">
+            
+            
+            <form action="/"><button class="Botão">Inicio</button></form>
+            <form action="/"><button class="Botão">Favoritos</button></form>
+            <form action="/"><button class="Botão">Promoções</button></form>
+
+
+        </div>
+        <form action="/cadastro" method="GET">
+            <input type="image"  src="/static/IMG/Icons/Upload.png" id="Upload" alt="Submit" width="55" height="40">
+         </form>
+        <img src="/static/IMG/Icons/Carrinho.png" width="40px" height="40px" id="Carz" onclick="Carrin()"/>
+        
+
+
+            <section class="sectionOrigin" id="sectionOrigin">
+                <p>Carrinho</p> <img src="/static/IMG/Icons/Carrinho.png" height="25px" width="25px" class="Carrinho">
+            </section>
+
+
+
+
+        <div class="Conteudo">
+            <img src="../{{Image}}" width="542" height="542" id="IMG"<br>
+            <h1  id="Nome">{{nome}}</h1>
+            <h2 id = "Preço">R${{Preço}}</h2>
+
+        </div>
+        <div class="Seleções">
+            <div id="sessão1">
+                <p id="s-cor">Selecionar cor</p>
+                    <select name="Cor" id="Select-Cor">
+                        <option>Branco</option>
+                        <option>Preto</option>
+                    </select>
+            </div>
+
+            <div id="sessão2">
+                <p id="s-cor">Selecionar tamanho</p>
+                    <select name="Tamanho" id="Select-Cor">
+                        <option>PP</option>
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                        <option>XGG</option>
+                        <option>G1</option>
+                        <option>G2</option>
+                    </select>
+            </div>
+
+            <div id="sessão3">
+                <p id="s-cor">Quantidade</p>
+                    <input placeholder="Quantidade"  type="number" id="Quantidade"
+            </div>
+
+            
+
+        </div>
+        <div class="Recomendações">
+
+        </div>
+
+ 
+
+
+
+
+
+            
+    </body>
+    <script src="/js/Script.js"></script>
+</html>

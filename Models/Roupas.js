@@ -23,5 +23,5 @@ const Roupas = db.sequelize.define('roupas' , {
     }
 });
 
-Roupas.sync(FORCE = 'true')
+
 module.exports = Roupas

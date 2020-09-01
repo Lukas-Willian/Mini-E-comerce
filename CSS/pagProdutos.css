@@ -1,0 +1,171 @@
+body{
+    
+    height: 2000px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-image: linear-gradient(#13141a ,#2b2d3a );
+}
+
+@keyframes opacity{
+    from{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-50);
+        opacity: 1;
+    }
+}
+
+.List{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-left: 225px;
+    color: white;
+
+
+}
+
+.Botão{
+    background-color: transparent;
+    color: white;
+    margin-left: 108px;
+    font-family: Decker;
+    font-size: 20pt;
+    border: none;
+}
+#Upload{
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+#Upload:hover{
+    cursor: pointer;
+}
+#Carz{
+    position: absolute;
+    right:17%;
+    top:5%;
+    background-color: #555b77;
+    border-radius: 5px;
+    align-items: center;
+}
+#img-prom{
+    animation-name: opacity;
+    animation-duration: 2s;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.button{
+    position:absolute ;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    top: 0;
+    right: 0;
+}
+
+.sectionOrigin{
+    flex-direction: row;
+    background-color: #4b4f64;
+    position: absolute;
+    width: 400px;
+    height: 0px;
+    right: 8%;
+    top: 10%;
+    color: white;
+    font-size: 25px;
+    font-family: Decker;
+    overflow: scroll;
+    text-align: center;
+    overflow-x: hidden;
+    border: 2px solid #15161b;
+}
+.sectionOrigin:hover{
+    width: 400;
+    height: 300px;
+}
+
+
+.Carrinho{
+    position: absolute;
+    left: 26%;
+    top: 7%;
+}
+
+.Conteudo{
+    position: absolute;
+    width: 542px;
+    height: auto;
+    top: 25%;
+    left: 10%;
+    
+}
+#Nome{
+    width: 100%;
+    position: relative;
+    color:white;
+    font-family: All the Way to the Sun;
+    text-align: center;
+}
+
+#Preço{
+    width: 100%;
+    position: relative;
+    color: rgb(255, 208, 0);
+    font-family: Decker;
+    text-align: center;
+    font-size: 28px;
+}
+
+#IMG{
+    object-fit: contain;
+}
+#sessão1{
+    position: absolute;
+    top: 22%;
+    left: 42%;
+}
+#sessão2{
+    position: absolute;
+    top: 38%;
+    left: 42%;
+}
+
+#sessão3{
+    position: absolute;
+    top: 56%;
+    left: 42%;
+}
+#s-cor{
+    font-size: 23px;
+    font-family: Decker;
+    color: white;
+}
+
+#Select-Cor{
+    width: 500px;
+    height: 50px;
+    background-color: #4b4f64;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Decker;
+    color: white;
+}
+
+#Quantidade{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+

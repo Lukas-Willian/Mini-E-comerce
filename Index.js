@@ -12,6 +12,9 @@ const multer = require('multer');
 
 
 
+
+
+
 //Tamplate engine
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
@@ -19,6 +22,7 @@ app.set('view engine', 'handlebars');
 
 //Config
     //Body-parser
+    
     app.use(bodyParser.urlencoded({extended:false}));
     app.use(bodyParser.json());
 
@@ -26,8 +30,12 @@ app.set('view engine', 'handlebars');
     
 //methods
     app.use('/static' , express.static('public'));
-    app.use('/static' , express.static('js'));
+    app.use('/CSS' , express.static('CSS'))
+    app.use('/js' , express.static('js'));
     app.use('/Uploads' , express.static('Uploads'))
+
+    
+    
 
 
 
@@ -126,6 +134,32 @@ app.set('view engine', 'handlebars');
                 res.send('Essa postagem não existe' + erro)
             })
         })
+
+
+        app.get('/pag/:id' , function(req,res){
+            
+            Roupas.findOne({where:{
+                'id' : req.params.id
+            }} 
+            ).then(function(id){
+                console.log(id.imagesRoupas)
+               res.render('pags' , {
+                nome : id.tituloRoupas,
+                Preço: id.preçoRoupas,
+                Image: id.imagesRoupas})
+               
+               
+            }).catch(function(erro){
+                res.send('Não encontramos este arquivo')
+            })
+           
+
+        })
+
+
+
+
+        
 
 
 
