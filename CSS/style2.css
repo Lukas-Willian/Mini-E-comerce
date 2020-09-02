@@ -1,8 +1,15 @@
 body{
-    
+    width: 100%;
     height: 2000px;
     margin: 0 auto;
     background-image: linear-gradient(#13141a ,#2b2d3a );
+    overflow-x: hidden;
+}
+
+#Log{
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
 }
 
 
@@ -24,12 +31,19 @@ body{
     font-family: Decker;
     font-size: 20pt;
     border: none;
+    outline: none;
+    
+}
+.Botão:hover{
+    cursor: pointer;
+    color: #e4e100;
 }
 #Upload{
-    position: absolute;
+    position: relative;
     right: 20%;
     top: 5%;
     background-color: transparent;
+    outline: none;
 }
 
 #img-prom{
@@ -53,17 +67,18 @@ body{
     
 }
 #Logo{
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .Nome{
-    transform: translateX(35%);
+    width: 100%;
+    text-align: center;
     color: white;
     font-size: 20px;
     font-family: Decker;
-    margin-top: 125px;
+    margin-top: 60px;
 }
 #Nome{
     width: 100%;
@@ -74,7 +89,8 @@ body{
     
 }
 .pr{
-    transform: translateX(35%);
+    width: 100%;
+    text-align: center;
     margin-top: 50px;
     color: white;
     font-size: 20px;
@@ -91,7 +107,7 @@ label{
     
     
     position: absolute;
-    top:65%;
+    top:66%;
     left: 50%;
     transform: translateX(-50%);
     width: 250px;
@@ -121,7 +137,8 @@ label:hover{
     color: white;
 }
 .p-Descrição{
- transform: translateX(41%);
+    width: 100%;
+    text-align: center;
     margin-top: 50px;
     color: white;
     font-size: 20px;
@@ -292,4 +309,8 @@ input[type=radio]:checked:after{
 }
 input[type=radio]:hover{
     cursor: pointer;
+}
+
+#Coração{
+    margin-top: 8px;
 }

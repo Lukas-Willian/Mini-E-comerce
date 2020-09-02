@@ -16,6 +16,11 @@ body{
         opacity: 1;
     }
 }
+#Log{
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+}
 
 .List{
     position: relative;
@@ -35,22 +40,26 @@ body{
     font-family: Decker;
     font-size: 20pt;
     border: none;
+    outline: none;
+}
+.Botão:hover{
+    cursor: pointer;
+    color: #e4e100;
 }
 #Upload{
-    position: absolute;
-    right: 20%;
-    top: 5%;
+    position: relative;
+    margin-left: 70px;
+    outline: none;
 }
 #Upload:hover{
     cursor: pointer;
 }
 #Carz{
-    position: absolute;
-    right:17%;
-    top:5%;
+    position: relative;
+    margin-left: 10px;
     background-color: #555b77;
     border-radius: 5px;
-    align-items: center;
+    
 }
 #img-prom{
     animation-name: opacity;
@@ -215,14 +224,14 @@ label:hover{
     width: 400px;
     height: 0px;
     right: 8%;
-    top: 10%;
+    top: 11.5%;
     color: white;
     font-size: 25px;
     font-family: Decker;
     overflow: scroll;
     text-align: center;
     overflow-x: hidden;
-    border: 2px solid #15161b;
+    border: 0 solid #15161b;
 }
 .sectionOrigin:hover{
     width: 400;
@@ -294,4 +303,19 @@ label:hover{
 #button2{
     background-color: transparent;
     border: none;
+}
+
+#Coração{
+    margin-top: 8px;
+}
+#search{
+    margin-left: 70px;
+    width: 380px;
+    height: 35px;
+    font-size: 20px;
+}
+
+#Proucurar{
+    
+    background-color: #4b4f64;
 }

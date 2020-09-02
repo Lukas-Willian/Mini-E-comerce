@@ -3,7 +3,7 @@ body{
     height: 2000px;
     margin: 0 auto;
     overflow-x: hidden;
-    background-image: linear-gradient(#13141a ,#2b2d3a );
+    background-image: linear-gradient(#15161b ,#2b2d3a );
 }
 
 @keyframes opacity{
@@ -15,6 +15,12 @@ body{
         transform: translateX(-50);
         opacity: 1;
     }
+}
+
+#Log{
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
 }
 
 .List{
@@ -35,19 +41,22 @@ body{
     font-family: Decker;
     font-size: 20pt;
     border: none;
+    outline: none;
+}
+.Botão:hover{
+    cursor: pointer;
+    color: #e4e100;
 }
 #Upload{
-    position: absolute;
-    right: 20%;
-    top: 5%;
+    position: relative;
+    margin-left: 70px;
 }
 #Upload:hover{
     cursor: pointer;
 }
 #Carz{
-    position: absolute;
-    right:17%;
-    top:5%;
+    position: relative;
+    margin-left: 10px;
     background-color: #555b77;
     border-radius: 5px;
     align-items: center;
@@ -79,7 +88,7 @@ body{
     width: 400px;
     height: 0px;
     right: 8%;
-    top: 10%;
+    top: 11.5%;
     color: white;
     font-size: 25px;
     font-family: Decker;
@@ -128,6 +137,11 @@ body{
 #IMG{
     object-fit: contain;
 }
+#Seleções{
+    width: 500px;
+    height: auto;
+    align-items: center;
+}
 #sessão1{
     position: absolute;
     top: 22%;
@@ -135,13 +149,13 @@ body{
 }
 #sessão2{
     position: absolute;
-    top: 38%;
+    top: 34%;
     left: 42%;
 }
 
 #sessão3{
     position: absolute;
-    top: 56%;
+    top: 48%;
     left: 42%;
 }
 #s-cor{
@@ -166,6 +180,76 @@ body{
     border-radius: 10px;
     font-size: 20px;
     border: none;
+}
+#Comprar{
+    width: 150px;
+    height: 40px;
+    background-color: #555b77;
+    color: white;
+    font-size: 22px;
+    font-family: Decker;
+    position: absolute;
+    margin-top: 35px;
+    left: 35%;
+    border-radius: 20px;
+    border: none;
+}
+
+#Reco{
+    font-family: Decker;
+    color: white;
+    transform: translateX(79%);
+    margin-top: 100px;
+}
+
+#produto1{
+    margin-top: 50px;
+    transform: translateX(500%);
+    width: 300px;
+    height: 320px;
+    object-fit: contain;
+    background-color: #4b4f64;
+    border: solid 1px rgb(255, 217, 0);
+}
+#produto2{
+    transform: translateX(500%);
+    width: 300px;
+    height: 320px;
+    object-fit: contain;
+    background-color: #4b4f64;
+    border: solid 1px rgb(255, 217, 0);
+}
+#produto3{
+    transform: translateX(500%);
+    width: 300px;
+    height: 320px;
+    object-fit: contain;
+    background-color: #4b4f64;
+    border: solid 1px rgb(255, 217, 0);
+}
+#photo{
+    display: block;
+    width: 250px;
+    height: 270px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0  auto;
+}
+
+#Coração{
+    margin-top: 8px;
+}
+#search{
+    margin-left: 70px;
+    width: 380px;
+    height: 35px;
+    font-size: 20px;
+}
+
+#Proucurar{
+    
+    background-color: #4b4f64;
 }
 
 

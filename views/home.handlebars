@@ -13,30 +13,30 @@
 
     <body id="Body">
 
-        <img src="./static/IMG/1.png" width="250px" height="105px"/>
+        <form action="/" method="GET"><input type="image" id="Log" src="./static/IMG/1.png" alt="Submit" width="180" height="105" /></form>
+        
+
         
 
         <div class="List">
             
             
             <form action="/"><button class="Botão">Inicio</button></form>
-            <form action="/"><button class="Botão">Favoritos</button></form>
+            <form action="/"><button class="Botão">Favoritos</button></form><img src="/static/IMG/Icons/Hearth.png" id="Coração" width="23px" height="20px"/>
             <form action="/"><button class="Botão">Promoções</button></form>
 
-
+            <input type="text" id="search" name="search" placeholder="Pesquisar"/><input  type="image" id="Proucurar" alt="Submit" src="/static/IMG/Icons/Lupa.png" width="35px" height="35px"/>
+            <form action="/cadastro" method="GET"><input type="image"  src="./static/IMG/Icons/Upload.png" id="Upload" alt="Submit" width="40" height="30"> </form>
+            <img src="./static/IMG/Icons/Carrinho.png" width="30px" height="30px" id="Carz" onclick="Carrin()"/>
         </div>
-        <form action="/cadastro" method="GET">
-            <input type="image"  src="./static/IMG/Icons/Upload.png" id="Upload" alt="Submit" width="55" height="40">
-         </form>
-        <img src="./static/IMG/Icons/Carrinho.png" width="40px" height="40px" id="Carz" onclick="Carrin()"/>
+        
+        
         <section id="img-prom">
         <img src="./static/IMG/Images/Inicio.png"  id="img-prom"/>
         </section>
 
 
-            <section class="sectionOrigin" id="sectionOrigin">
-                <p>Carrinho</p> <img src="./static/IMG/Icons/Carrinho.png" height="25px" width="25px" class="Carrinho">
-            </section>
+            <section class="sectionOrigin" id="sectionOrigin"><p>Carrinho</p> <img src="./static/IMG/Icons/Carrinho.png" height="25px" width="25px" class="Carrinho"></section>
 
  
 

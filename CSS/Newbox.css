@@ -65,6 +65,8 @@ body::-webkit-scrollbar-thumb{
     height: 200px;
     object-fit: contain;
     background-color: #303442;
+    border: none;
+    outline: none;
 
 }
 #Nome{

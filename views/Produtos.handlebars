@@ -8,19 +8,24 @@
 
     <body id="Body">
 
-        <form action="/" method="GET"><input type="image" src="./static/IMG/1.png" alt="Submit" width="250" height="105"/></form>
+        <form action="/" method="GET"><input type="image" id="Log" src="./static/IMG/1.png" alt="Submit" width="180" height="105" /></form>
+        
 
         <form action="/" method="GET">
         <div class="List">
             <button class="Botão">Inicio</button>
-            <button class="Botão">Favoritos</button>
+            <button class="Botão">Favoritos</button><img src="/static/IMG/Icons/Hearth.png" id="Coração" width="23px" height="20px"/>
             <button class="Botão">Promoções</button>
+
+
+            
+
         </div>
             </form>
         
 <form action="/upload" enctype="multipart/form-data" method="POST">
         <section class="Armazenado">
-            <img src="./static/IMG/1.png" id="Logo" width="200px" height="90px"/>
+            <img src="./static/IMG/1.png" id="Logo" width="200px" height="120px"/>
             <p class="Nome">Nome do produto: </p> <input type="text" id="Nome" name="nome" placeholder="Digite o nome do produto"/>
             <p class="pr">Preço do produto:</p><input type="number" id="preço" name="preco" placeholder="Digite o preço do produto">
             <p id="Cate">Categorias</p>

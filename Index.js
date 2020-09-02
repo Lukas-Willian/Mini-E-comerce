@@ -10,11 +10,6 @@ const multer = require('multer');
 
 
 
-
-
-
-
-
 //Tamplate engine
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
