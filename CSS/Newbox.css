@@ -7,7 +7,7 @@
     
 }
 #list2{
-    margin-top: 12%;
+    margin-top: 6%;
     text-align: center;
     font-size: 35px;
     color: white;
@@ -69,6 +69,7 @@ body::-webkit-scrollbar-thumb{
     outline: none;
 
 }
+
 #Nome{
     margin-top: 0;
     font-size:25px;
@@ -83,3 +84,16 @@ body::-webkit-scrollbar-thumb{
     position: relative;
     
 }
+
+#canvas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+    
+}
+

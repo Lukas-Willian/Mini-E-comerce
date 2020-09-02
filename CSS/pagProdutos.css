@@ -193,6 +193,12 @@ body{
     left: 35%;
     border-radius: 20px;
     border: none;
+    outline: none;
+}
+#Comprar:hover{
+    background-color: #3b3d4e;
+    cursor: pointer;
+    transition: linear 0.5s;
 }
 
 #Reco{

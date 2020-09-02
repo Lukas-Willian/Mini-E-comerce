@@ -1,6 +1,6 @@
 body{
     
-    height: 2000px;
+    height: auto;
     margin: 0 auto;
     overflow-x: hidden;
     background-image: linear-gradient(#13141a ,#2b2d3a );
@@ -31,23 +31,6 @@ body{
     color: white;
 
 
-}
-
-#All{
-    color: #e4e100;
-    font-family: Decker;
-    font-size: 25px;
-    margin-left: 20px;
-    border: none;
-    outline: none;
-
-}
-
-a{
-    text-decoration: none;
-}
-#All:hover{
-    color: white;
 }
 
 .Botão{

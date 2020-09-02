@@ -131,7 +131,7 @@ app.set('view engine', 'handlebars');
         })
 
 
-        app.get('/pag/:id' , function(req,res){
+        app.get('/pag/roupas/:id' , function(req,res){
             
             Roupas.findOne({where:{
                 'id' : req.params.id
@@ -149,6 +149,37 @@ app.set('view engine', 'handlebars');
             })
            
 
+        });
+
+        app.get('/pag/tenis/:id' , function(req , res){
+            Post.findOne({where:{
+                'id' :req.params.id
+            }}
+            ).then(function(id){
+                res.render('pags' , {
+                    nome: id.titulo,
+                    Preço: id.preço,
+                    Image : id.images
+                    
+                })
+            })
+        })
+
+        app.get('/categorias/calcados' , function(req,res){
+            Post.findAll().then(function(tens){
+                res.render('viewall' , {
+                    tens:tens,
+                    images: tens.image
+                })
+            })
+        })
+
+        app.get('/categorias/roupas' , function(req , res){
+            Roupas.findAll().then(function(roups){
+                res.render('viewall' , {
+                    roups:roups
+                })
+            })
         })
 
 

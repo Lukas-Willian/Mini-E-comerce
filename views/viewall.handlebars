@@ -1,0 +1,69 @@
+
+
+
+    <html>
+    <head>
+        <link rel="stylesheet" href="/CSS/viewall.css">
+        <link rel="stylesheet" href="/CSS/Newbox.css">
+        <link rel="shortcut icon" href="/static/IMG/1.png">
+        <title>
+            Mini E-comerce
+        </title>
+    </head>
+
+    <body id="Body">
+
+        <form action="/" method="GET"><input type="image" id="Log" src="/static/IMG/1.png" alt="Submit" width="180" height="105" /></form>
+        
+
+        
+
+        <div class="List">
+            
+            
+            <form action="/"><button class="Botão">Inicio</button></form>
+            <form action="/"><button class="Botão">Favoritos</button></form><img src="/static/IMG/Icons/Hearth.png" id="Coração" width="23px" height="20px"/>
+            <form action="/"><button class="Botão">Promoções</button></form>
+
+            <input type="text" id="search" name="search" placeholder="Pesquisar"/><input  type="image" id="Proucurar" alt="Submit" src="/static/IMG/Icons/Lupa.png" width="35px" height="35px"/>
+            <form action="/cadastro" method="GET"><input type="image"  src="/static/IMG/Icons/Upload.png" id="Upload" alt="Submit" width="40" height="30"> </form>
+            <img src="/static/IMG/Icons/Carrinho.png" width="30px" height="30px" id="Carz" onclick="Carrin()"/>
+        </div>
+            <section class="sectionOrigin" id="sectionOrigin"><p>Carrinho</p> <img src="/static/IMG/Icons/Carrinho.png" height="25px" width="25px" class="Carrinho"></section>
+
+    <header id="canvas">
+        {{#each tens }}
+        
+            <div id="Quadro">
+                <a href="/pag/tenis/{{dataValues.id}}"><input type="image" id="IMG" alt="Submit" src="/{{dataValues.images}}"/><input id="Button2" type="button" alt="Submit"/></a>
+                <h1 id="Nome">{{dataValues.titulo}}</h1>
+                <p id="Preço">R${{dataValues.preço}}</p>
+                <a id="Lixeira" href="/deletarPost/{{dataValues.id}}"><input type="image" alt="Submit" src="../static/IMG/Icons/Lixeira.png" width="30px" height="25px"/> </a>  
+            </div>
+        
+        {{/each}}
+    </header>
+
+        <header id="canvas">
+        {{#each roups}}
+        
+            <div id="Quadro">
+                <a href="/pag/roupas/{{dataValues.id}}"><input type="image" id="IMG" alt="Submit" src="/{{dataValues.imagesRoupas}}"/><input id="Button2" type="button" alt="Submit"/></a>
+                <h1 id="Nome">{{dataValues.tituloRoupas}}</h1>
+                <p id="Preço">R${{dataValues.preçoRoupas}}</p>
+                <a id="Lixeira" href="/deletarPost/{{dataValues.id}}"><input type="image" alt="Submit" src="../static/IMG/Icons/Lixeira.png" width="30px" height="25px"/> </a>  
+            </div>
+        
+        {{/each}}
+    </header>
+       
+
+
+
+
+
+
+            
+    </body>
+    <script src="../js/Script.js"></script>
+</html>
