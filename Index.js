@@ -5,7 +5,10 @@ const bodyParser = require('body-parser');
 const handlebars = require('express-handlebars')
 const Post = require('./Models/Post');
 const Roupas = require('./Models/Roupas')
+const usuarios = require('./Models/usuario')
 const multer = require('multer');
+const bcrypt = require('bcrypt');
+const PostarProduto = require('./controller/Post-produtos')
 
 
 
@@ -112,10 +115,10 @@ app.set('view engine', 'handlebars');
 
         }})
 
-        app.get('/cadastrar' , function(req, res){
+        app.get('/usuario/cadastrar' , function(req, res){
             res.render('Cadastro')
         })
-        app.get('/entrar' , function(req,res){
+        app.get('/usuario/entrar' , function(req,res){
             res.render('Entrar')
         })
 
@@ -186,6 +189,34 @@ app.set('view engine', 'handlebars');
                 res.render('viewall' , {
                     roups:roups
                 })
+            })
+        })
+
+        app.post('/usuario/CadastrarConta' , function(req , res){
+            
+
+            if(req.body.Nome == '' || req.body.Sobrenome == '' || req.body.email == '' || req.body.password == ''){
+                res.send('insira os campos')
+            }
+
+            usuarios.findOne({where:{
+                'email' : req.body.email
+            }}).then((usuario) =>{
+                if(usuario){
+                    res.send("Ja existe uma conta com esse endereço de email")
+                }else{
+
+
+                    usuarios.create({
+                        nome: req.body.Nome,
+                        sobrenome : req.body.Sobrenome,
+                        email : req.body.email,
+                        senha: req.body.password
+                    });
+                    res.redirect('/')
+
+
+                }
             })
         })
 
