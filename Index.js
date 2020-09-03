@@ -112,6 +112,13 @@ app.set('view engine', 'handlebars');
 
         }})
 
+        app.get('/cadastrar' , function(req, res){
+            res.render('Cadastro')
+        })
+        app.get('/entrar' , function(req,res){
+            res.render('Entrar')
+        })
+
 
 
         app.get('/deletarPost/:id' , function(req,res){

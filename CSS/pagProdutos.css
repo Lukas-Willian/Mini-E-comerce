@@ -115,6 +115,7 @@ body{
     height: auto;
     top: 25%;
     left: 10%;
+    overflow: hidden;
     
 }
 #Nome{
@@ -133,9 +134,23 @@ body{
     text-align: center;
     font-size: 28px;
 }
-
+#conteudo2{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
 #IMG{
     object-fit: contain;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#IMG:hover{
+    
+    
+    transform: scale(1.1);
+    transition: 1s linear;
+    
 }
 #Seleções{
     width: 500px;
@@ -194,6 +209,7 @@ body{
     border-radius: 20px;
     border: none;
     outline: none;
+    text-align: center;
 }
 #Comprar:hover{
     background-color: #3b3d4e;

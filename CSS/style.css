@@ -336,3 +336,25 @@ label:hover{
     
     background-color: #4b4f64;
 }
+
+#Entrar{
+    margin-left: 50px;
+    font-family: Decker;
+    font-size: 25px;
+    color: white;
+}
+#Entrar:hover{
+    cursor: pointer;
+    color: #bba306;
+}
+
+#Cadastrar{
+    margin-left: 20px;
+    font-family: Decker;
+    font-size: 25px;     
+    color: white;       
+}
+#Cadastrar:hover{
+    cursor: pointer;
+    color: #bba306;
+}
