@@ -1,24 +1,47 @@
 const db = require('./db');
+const bcrypt = require('bcrypt');
 
 
 
 
 
 
-const usuarios = db.sequelize.define('usuarios' , {
-    nome:{
-        type:db.Sequelize.STRING
+const user = db.sequelize.define('usuarios' , {
+    firstName: {
+        type: db.Sequelize.STRING,
+        field: 'first_name'
     },
-    sobrenome:{
-        type:db.Sequelize.STRING
+    lastName: {
+        type:   db.Sequelize.STRING,
+        field: 'last_name'
     },
-    email:{
-        type:db.Sequelize.STRING
+    eAdimim:{
+        type:db.Sequelize.INTEGER,
+        defaultValue: 1
     },
+    email: db.Sequelize.STRING,
+    password: db.Sequelize.STRING
+}, {
+    hooks:{
+        beforeCreate: user =>{
+            const salt = bcrypt.genSaltSync();
+            user.set("password" , bcrypt.hashSync(user.password , salt))
+        }
+    },
+    classMethods : {
+        isPassword: (encodedPassword , password) =>bcrypt.compareSync(password , encodedPassword)
+    }
+        
+    
+})     
 
-    senha:{
-        type:db.Sequelize.STRING
-    },
-});
 
-module.exports = usuarios
+
+module.exports = user
+
+
+
+
+
+
+

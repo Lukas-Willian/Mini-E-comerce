@@ -55,7 +55,7 @@ a{
     color: white;
     margin-left: 108px;
     font-family: Decker;
-    font-size: 20pt;
+    font-size: 25px;
     border: none;
     outline: none;
 }
@@ -340,7 +340,7 @@ label:hover{
 #Entrar{
     margin-left: 50px;
     font-family: Decker;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 #Entrar:hover{
@@ -349,9 +349,9 @@ label:hover{
 }
 
 #Cadastrar{
-    margin-left: 20px;
+    margin-left: 35px;
     font-family: Decker;
-    font-size: 25px;     
+    font-size: 20px;     
     color: white;       
 }
 #Cadastrar:hover{

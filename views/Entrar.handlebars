@@ -3,7 +3,7 @@
 
     <html>
     <head>
-        <link rel="stylesheet" href="/CSS/Cadastro.css">
+        <link rel="stylesheet" href="/CSS/Entrar.css">
         <link rel="shortcut icon" href="/static/IMG/1.png">
         <title>
             Mini E-comerce
@@ -34,11 +34,17 @@
             <img src="/static/IMG/1.png" width="251px" height="150px"/>
             
             <br>
+            <form action="/usuario/LogarConta" method="post">
             <input type="email" id="email" name="email" placeholder="Insira seu melhor email"/>
             <br>
             <input type="password" id="password" name="password" placeholder="Insira a senha"/>
             <br>
-            <input type="button" value="Entrar" id="Cadastrar"/>
+            <input type="submit" alt="Submit" value="Entrar" id="Cadastrar"/>
+            <br>
+           
+            </form>
+             <a href="/usuario/cadastrar" id="CadastrarH">Criar conta</a>
+            
         </div>
 
 

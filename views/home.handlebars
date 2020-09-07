@@ -22,14 +22,21 @@
             
             
             <form action="/"><button class="Botão">Inicio</button></form>
-            <form action="/"><button class="Botão">Favoritos</button></form><img src="/static/IMG/Icons/Hearth.png" id="Coração" width="23px" height="20px"/>
+            <form action="/favoritos" method="get"><button  class="Botão">Favoritos</button></form><img src="/static/IMG/Icons/Hearth.png" id="Coração" width="23px" height="20px"/>
             <form action="/"><button class="Botão">Promoções</button></form>
 
             <input type="text" id="search" name="search" placeholder="Pesquisar"/><input  type="image" id="Proucurar" alt="Submit" src="/static/IMG/Icons/Lupa.png" width="35px" height="35px"/>
-            <form action="/cadastro" method="GET"><input type="image"  src="./static/IMG/Icons/Upload.png" id="Upload" alt="Submit" width="40" height="30"> </form>
+            <form action="/cadastro" method="GET"><input type="image"  src="./static/IMG/Icons/Upload.png" id="Upload"  alt="Submit" width="40" height="30"> </form>
             <img src="./static/IMG/Icons/Carrinho.png" width="30px" height="30px" id="Carz" onclick="Carrin()"/>
+            
+            {{#if user}}
+            <a href="/myLog" id="entrar">Minha conta</a>
+            <a href="/logout" id="cadastrar">LogOut</a>
+
+            {{else}}
             <a href="/usuario/entrar" id="entrar">Entrar</a>
             <a href="/usuario/cadastrar"  id="cadastrar">Cadastrar</a>
+            {{/if}}
         </div>
         
         
@@ -50,6 +57,7 @@
                         <h1 id="Nome">{{dataValues.titulo}}</h1>
                         <p id="Preço">R${{dataValues.preço}}</p>
                         <a id="Lixeira" href="/deletarPost/{{dataValues.id}}"><input type="image" alt="Submit" src="../static/IMG/Icons/Lixeira.png" width="30px" height="25px"/> </a>  
+                        <a id="fav" href="/favoritar/{{dataValues.id}}"><input type="image" alt="Submit" name="heath" id="Heart" src="/static/IMG/Icons/Hearth.png"</a>
                     </div>
 
                 {{/each}}

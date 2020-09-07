@@ -38,7 +38,7 @@ body{
     color: white;
     margin-left: 108px;
     font-family: Decker;
-    font-size: 20pt;
+    font-size: 25px;
     border: none;
     outline: none;
 }
@@ -318,4 +318,15 @@ label:hover{
 #Proucurar{
     
     background-color: #4b4f64;
+}
+
+#Favi{
+    width: 100%;
+    display: flex;
+    color: white;
+    font-family: Decker;
+    justify-content: center;
+    margin-top: 80px;
+    text-decoration-line: underline;
+    
 }

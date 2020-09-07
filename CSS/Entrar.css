@@ -1,0 +1,199 @@
+body{
+    
+    height: auto;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-image: linear-gradient(#13141a ,#2b2d3a );
+}
+
+@keyframes opacity{
+    from{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-50);
+        opacity: 1;
+    }
+}
+#Log{
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.List{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-left: 225px;
+    color: white;
+
+
+}
+
+.Botão{
+    background-color: transparent;
+    color: white;
+    margin-left: 108px;
+    font-family: Decker;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+.Botão:hover{
+    cursor: pointer;
+    color: #e4e100;
+}
+#Upload{
+    position: relative;
+    margin-left: 70px;
+    outline: none;
+}
+#Upload:hover{
+    cursor: pointer;
+}
+#Carz{
+    position: relative;
+    margin-left: 10px;
+    background-color: #555b77;
+    border-radius: 5px;
+    
+}
+
+.sectionOrigin{
+    flex-direction: row;
+    background-color: #4b4f64;
+    position: absolute;
+    width: 400px;
+    height: 0px;
+    right: 8%;
+    top: 11.5%;
+    color: white;
+    font-size: 25px;
+    font-family: Decker;
+    overflow: scroll;
+    text-align: center;
+    overflow-x: hidden;
+    border: 0 solid #15161b;
+}
+.sectionOrigin:hover{
+    width: 400;
+    height: 300px;
+}
+
+
+.Carrinho{
+    position: absolute;
+    left: 26%;
+    top: 7%;
+}
+
+
+#gender{
+    color: white;
+}
+
+#button2{
+    background-color: transparent;
+    border: none;
+}
+
+#Coração{
+    margin-top: 8px;
+}
+#search{
+    margin-left: 70px;
+    width: 380px;
+    height: 35px;
+    font-size: 20px;
+}
+
+#Proucurar{
+    
+    background-color: #4b4f64;
+}
+#box-cadastro{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #4b4f64;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(32, 32, 32);
+    
+}
+
+
+#email{
+    margin-top: 10px;
+    width: 500px;
+    height: 40px;
+    font-size: 21px;
+    font-family: Decker;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    
+
+}
+#password{
+    width: 500px;
+    height: 40px;
+    font-size: 21px;
+    font-family: Decker;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+}
+
+#Cadastrar{
+    display: flex;
+    justify-content: center;
+    margin-left: 37%;
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-family: Decker;
+    font-size: 20px;
+    background-color: #e4e100;
+    
+}
+#Cadastrar:hover{
+    cursor: pointer;
+    background-color: #b39800;
+    transition: linear 0.5s;
+}
+#CadastrarH{    
+    margin-top: -80px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-family: Decker;
+    font-size: 20px;
+    background-color: #e4e100;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CadastrarH:hover{
+    cursor: pointer;
+    background-color: #b39800;
+    transition: linear 0.5s;
+}

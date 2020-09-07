@@ -8,10 +8,36 @@ const Roupas = require('./Models/Roupas')
 const usuarios = require('./Models/usuario')
 const multer = require('multer');
 const bcrypt = require('bcrypt');
-const PostarProduto = require('./controller/Post-produtos')
+const session = require('express-session');
+const flash = require('connect-flash');
+const PostarProduto = require('./controller/Post-produtos');
+const passport = require('passport');
+require("./config/auth")(passport);
+const {eAdmim} = require("./helpers/esLogado");
 
 
 
+//Sessão
+
+app.use(session({
+    secret:"curso",
+    resave:true,
+    saveUninitialized:true
+}))
+
+
+app.use(passport.initialize())
+app.use(passport.session())
+
+app.use(flash())
+
+//middleware
+app.use((req , res , next)=>{
+    res.locals.success_msg = req.flash("success_msg")
+    res.locals.error_msg = req.flash("error_msg") 
+    res.locals.user = req.user || null
+    next() 
+})
 
 //Tamplate engine
 app.engine('handlebars', handlebars());
@@ -77,7 +103,7 @@ app.set('view engine', 'handlebars');
 
 
         //Cadastro
-        app.get('/cadastro' , function(req , res) {
+        app.get('/cadastro' ,eAdmim, function(req , res) {
         res.render('Produtos')
         })
 
@@ -120,6 +146,12 @@ app.set('view engine', 'handlebars');
         })
         app.get('/usuario/entrar' , function(req,res){
             res.render('Entrar')
+        })
+        app.get('/sucesso' , function(req , res) {
+            res.render('Sucesso')
+        })
+        app.get('/error' , function(req, res){
+            res.render('Error')
         })
 
 
@@ -193,41 +225,82 @@ app.set('view engine', 'handlebars');
         })
 
         app.post('/usuario/CadastrarConta' , function(req , res){
-            
-
-            if(req.body.Nome == '' || req.body.Sobrenome == '' || req.body.email == '' || req.body.password == ''){
-                res.send('insira os campos')
+            if(req.body.Nome == '' || req.body.Sobrenome == '' || req.body.email == ''){
+                res.send('Preencha todos os campos correntamente')
             }
+ 
 
-            usuarios.findOne({where:{
-                'email' : req.body.email
-            }}).then((usuario) =>{
-                if(usuario){
-                    res.send("Ja existe uma conta com esse endereço de email")
-                }else{
-
-
-                    usuarios.create({
-                        nome: req.body.Nome,
-                        sobrenome : req.body.Sobrenome,
-                        email : req.body.email,
-                        senha: req.body.password
-                    });
-                    res.redirect('/')
-
-
+        usuarios.findOne({where : {
+            'email' :req.body.email
+        }}).then((user)=>{
+            if(user){
+                res.render('Error')
+            }else{
+                usuarios.create({
+                    firstName: req.body.Nome,
+                    lastName : req.body.Sobrenome,
+                    email : req.body.email,
+                    password: req.body.password
+                });
+                res.redirect('/sucesso')
                 }
+            })
+        
+   
+        })
+
+        app.post('/usuario/LogarConta' , (req , res , next) =>{
+            passport.authenticate("local" , {
+                successRedirect: "/",
+                failureRedirect: "/error"
+            })(req, res , next)
+        })
+
+        app.get('/logout' , function(req , res){
+            req.logOut()
+            res.redirect('/')
+        })
+
+        app.get('/favoritar/:id',eAdmim , function(req , res){
+            Post.findOne({where: {
+                'id' : req.params.id
+            }}).then(function(id){
+                id.favorito = true;
+                id.save();
+                res.redirect('/');
+
+            })
+        });
+        app.get('/desfavoritar/:id' , function(req,res){
+            Post.findOne({where:{
+                'id' : req.params.id
+            }}).then(function(id){
+                id.favorito = false;
+                id.save();
+                setTimeout(function(){ res.redirect(req.get('referer')); }, 1000);
+
+               
             })
         })
 
+        
+        app.get('/favoritos' , eAdmim , function(req , res){
+            Post.findAll({where:{
+                favorito : true
+            }}).then(function(favorits){
+                
+                res.render('favoritos' ,{
+                    favorits : favorits
+                } )
+            })
+        });
 
 
 
         
 
 
-
-
+        
 
 
 

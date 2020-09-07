@@ -38,7 +38,7 @@ body{
     color: white;
     margin-left: 108px;
     font-family: Decker;
-    font-size: 20pt;
+    font-size: 25px;
     border: none;
     outline: none;
 }
@@ -129,6 +129,11 @@ body{
     background-color: #4b4f64;
     border-radius: 20px;
     box-shadow: 5px 5px rgb(32, 32, 32);
+    justify-items: center;
+}
+
+#imgs{
+    margin-left: 28%;
 }
 
 #Nome{
@@ -173,6 +178,8 @@ body{
 }
 
 #Cadastrar{
+    margin-top: 20px;
+    margin-left: 35%;
     width: 130px;
     height: 40px;
     border: none;
@@ -182,6 +189,7 @@ body{
     font-family: Decker;
     font-size: 20px;
     background-color: #e4e100;
+    
 }
 #Cadastrar:hover{
     cursor: pointer;

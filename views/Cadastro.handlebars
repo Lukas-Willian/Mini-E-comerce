@@ -32,14 +32,14 @@
 
         <div id="box-cadastro">
             <form action="/usuario/CadastrarConta" method="POST">
-                <img src="/static/IMG/1.png" width="251px" height="150px"/>
-                <input type="text" id="Nome" name="Nome" autocomplete="off" placeholder="Nome"/><input type="text" name="Sobrenome" id="Sobrenome" autocomplete="off" placeholder="Sobrenome"/>
+                <img src="/static/IMG/1.png" id="imgs" width="251px" height="150px"/>
+                <input type="text" id="Nome" name="Nome" autocomplete="none" placeholder="Nome"/><input type="text" name="Sobrenome" id="Sobrenome" autocomplete="none" placeholder="Sobrenome"/>
                 <br>
-                <input type="email" id="email" name="email" placeholder="Insira seu melhor email"/>
+                <input type="email" id="email" name="email" autocomplete="none"  placeholder="Insira seu melhor email"/>
                 <br>
                 <input type="password" id="password" name="password" placeholder="Insira a senha"/>
                 <br>
-                <input type="password" id="password"  placeholder="Insira a senha novamente"/>
+                <input type="password" id="password" name="passwordN"  placeholder="Insira a senha novamente"/>
                 <input type="submit" alt="Submit" value="Cadastrar" id="Cadastrar"/>
             </form>
         </div>

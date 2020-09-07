@@ -3,6 +3,8 @@ const db = require('./db');
 
 
 
+
+
 const Post = db.sequelize.define('produtos' ,{
     titulo:{
         type:db.Sequelize.STRING
@@ -18,6 +20,10 @@ const Post = db.sequelize.define('produtos' ,{
     },
     images:{
         type:db.Sequelize.STRING
+    },
+    favorito:{
+        type:db.Sequelize.BOOLEAN,
+        defaultValue: false
     }
     
 });

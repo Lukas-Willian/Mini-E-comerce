@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('produtoApp' , 'root' , '123Lukas@',{
     host: 'localhost',
-    dialect:'mysql'
+    dialect:'mysql',
 });
 
 sequelize.authenticate().then(function(){

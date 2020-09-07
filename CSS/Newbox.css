@@ -97,4 +97,17 @@ body::-webkit-scrollbar-thumb{
     
 }
 
+#Heart{
+    filter: saturate(0);
+}
+#Heart:hover{
+    filter: saturate(1);
+}
+
+#Heart-fav{
+    filter: saturate(1);
+}
+#Heart-fav:hover{
+    filter: saturate(0);
+}
 
