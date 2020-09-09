@@ -1,0 +1,197 @@
+body{
+    
+    height: auto;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-image: linear-gradient(#13141a ,#2b2d3a );
+}
+
+@keyframes opacity{
+    from{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-50);
+        opacity: 1;
+    }
+}
+#Log{
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.List{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-left: 225px;
+    color: white;
+
+
+}
+
+.Botão{
+    background-color: transparent;
+    color: white;
+    margin-left: 108px;
+    font-family: Decker;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+.Botão:hover{
+    cursor: pointer;
+    color: #e4e100;
+}
+#Upload{
+    position: relative;
+    margin-left: 70px;
+    outline: none;
+}
+#Upload:hover{
+    cursor: pointer;
+}
+#Carz{
+    position: relative;
+    margin-left: 10px;
+    background-color: #555b77;
+    border-radius: 5px;
+    
+}
+
+.sectionOrigin{
+    flex-direction: row;
+    background-color: #4b4f64;
+    position: absolute;
+    width: 400px;
+    height: 0px;
+    right: 8%;
+    top: 11.5%;
+    color: white;
+    font-size: 25px;
+    font-family: Decker;
+    overflow: scroll;
+    text-align: center;
+    overflow-x: hidden;
+    border: 0 solid #15161b;
+}
+.sectionOrigin:hover{
+    width: 400;
+    height: 300px;
+}
+
+
+.Carrinho{
+    position: absolute;
+    left: 26%;
+    top: 7%;
+}
+
+
+#gender{
+    color: white;
+}
+
+#button2{
+    background-color: transparent;
+    border: none;
+}
+
+#Coração{
+    margin-top: 8px;
+}
+#search{
+    margin-left: 70px;
+    width: 380px;
+    height: 35px;
+    font-size: 20px;
+}
+
+#Proucurar{
+    
+    background-color: #4b4f64;
+}
+
+#User{
+    display: flex;
+    width: 75%;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#userP{
+    margin-left: 5px;
+    font-size: 25px;
+    font-family: Decker;
+    color: #31afff;
+}
+
+#Quadro{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: auto;
+    
+}
+
+#pnames{
+    display: flex;
+    flex-direction: row;
+    
+}
+#nome{
+    display: flex;
+    width: 350px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #393d50;
+    border-radius: 20px;
+    color: rgb(255, 217, 0) ;
+    font-family: Decker;
+    font-size: 25px;
+    
+    
+}
+#sobrenome{
+    display: flex;
+    width: 350px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #393d50;
+    border-radius: 20px;
+    color: rgb(255, 217, 0) ;
+    font-family: Decker;
+    font-size: 25px;
+}
+
+#email{
+    display: flex;
+    width: 700px;
+    height: 50px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #393d50;
+    border-radius: 20px;
+    color: rgb(255, 217, 0);
+    font-family: Decker;
+    font-size: 25px;
+}
+
+#view{
+    margin-top: 25px;
+    margin-left: 10px;
+    color:rgb(255, 217, 0);
+    font-size: 25px;
+    font-family: Decker;
+    text-decoration: none;
+}
+

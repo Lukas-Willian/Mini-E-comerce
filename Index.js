@@ -17,6 +17,7 @@ const {eAdmim} = require("./helpers/esLogado");
 
 
 
+
 //Sessão
 
 app.use(session({
@@ -296,6 +297,9 @@ app.set('view engine', 'handlebars');
         });
 
 
+        app.get('/account' ,  function(req , res){
+            res.render('My_acout')
+        })
 
         
 
